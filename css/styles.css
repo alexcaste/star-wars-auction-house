@@ -13,6 +13,7 @@
 
 .thumbnail {
   height: 240px;
+  float:left;
   max-width: 340px;
 }
 
@@ -22,8 +23,9 @@ body {
 
 }
 
-#deets {
+#deets, #deeets {
   float:right;
+  margin-right: -30px;
 }
 
 #auctionname{
