@@ -34,6 +34,7 @@
   <div class="col-md-12 column">
     <br>
        {{#each}}
+       {{#link-to 'auction' this.id}}
         <div class="well row clearfix">
           <div class="col-md-6 column">
             <p class="lead">
@@ -41,7 +42,7 @@
             </p>
 
 
-            <h4><strong>{{#link-to 'auction' this.id}}{{name}}{{/link-to}}</strong></h4>
+            <h4><strong>{{name}}</strong></h4>
             <img class="thumbnail" src="{{products.firstObject.image}}">
           </div>
           <div class="col-md-6 column">
@@ -62,6 +63,7 @@
             </ul>
           </div>
         </div>
+        {{/link-to}}
       {{/each}}
 
 
